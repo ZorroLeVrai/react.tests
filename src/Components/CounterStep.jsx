@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { STEP_ACTION } from "./CounterDevice";
 
 export default function CounterStep({ step, dispatch }) {
@@ -7,8 +6,6 @@ export default function CounterStep({ step, dispatch }) {
     const action = { type: STEP_ACTION.SET_VALUE, payload: newStep };
     dispatch(action);
   };
-
-  useEffect(() => console.log("CounterStep reloaded"));
 
   return (
     <>
